@@ -57,15 +57,24 @@ Debido a la química de las baterías de polímero de litio, volar por debajo de
 
 Los PID son importantes en el ajuste del quad, con el ajuste de los PID podemos lograr una buena respuesta del quad.  
 
-D es el término PID más importante para lograr un vuelo suave, D ayuda a minimizar el apoyo y a deshacer cualquier movimiento de los quads. Los quads de estilo libre tienden a usar ganancias de D más altas.
+D es el término PID más importante para lograr un vuelo suave, D ayuda a minimizar el apoyo y a deshacer cualquier movimiento de los quads. Los quads de estilo libre tienden a usar ganancias de D más altas. 
 
-Para contrarrestar una ganancia D más alta de lo normal, P también debe aumentarse.
+**Nota**: Aunque en el repositorio los autores hablan de empezar subiendo la D hay que tener en cuenta que un valor de D excesivo podria dañar nuestros motores por sobrecalentamiento.  
 
-Un enfoque simple para ajustar P y D es establecer una ganancia D deseada (por ejemplo, 45) y aumentar lentamente P lo más alto posible sin producir ningún rebote en los giros y vueltas (consulte el video de UAV Tech).
+Para contrarrestar una ganancia D más alta de lo normal, P también debe aumentarse.  
 
-https://www.youtube.com/watch?v=qK5APBg76AU
+Un enfoque simple para ajustar P y D es establecer una ganancia D deseada (por ejemplo, 45) y aumentar lentamente P lo más alto posible sin producir ningún rebote en los giros y vueltas (consulte el video de UAV Tech).  
 
-El término I es generalmente lo suficientemente bueno por defecto, sin embargo, si el quad se siente descuidado, aumentar la ganancia podría mejorar la actitud general.
+https://www.youtube.com/watch?v=qK5APBg76AU  
+
+El término I es generalmente lo suficientemente bueno por defecto, sin embargo, si el quad no tiene un movimiento solido, aumentar la ganancia podría mejorar la actitud general.  
+
+**Valores sugeridos por betaflight:** Quad de 5"  
+======P======I======D=====      
+Rol===60-70==90-100==40-50====   
+Pitch==06-70==90-100==40-50====  
+Yaw===30-40==90-100==0=======   
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX   
 
 ===============================EN DESARROLLO=========================================
 
